@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>🌤 Weather App</h2>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Search city...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Suggestions -->
+        <ul id="suggestions"></ul>
+
+        <!-- Loading -->
+        <div id="loading" class="hidden">Loading...</div>
+
+        <!-- Error -->
+        <div id="error" class="hidden"></div>
+
+        <!-- Weather -->
+        <div id="weather" class="hidden">
+            <h3 id="city"></h3>
+            <p id="dateTime"></p>
+
+            <img id="icon" src="" alt="icon">
+
+            <h1 id="temp"></h1>
+            <p id="condition"></p>
+
+            <div class="details">
+                <p>💧 Humidity: <span id="humidity"></span></p>
+                <p>💨 Wind: <span id="wind"></span></p>
+            </div>
+
+            <button id="toggleTemp">Switch to °F</button>
+        </div>
+    </div>
+</div>
+
+<footer>Developed by Ayush</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
